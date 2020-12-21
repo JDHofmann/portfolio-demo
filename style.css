@@ -1,0 +1,114 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, li, a, span {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    background: #202020;
+    color: #ffffff;
+  }
+
+.content {
+    /* border: 2px solid #ff000080;; */
+    width: 90vw;
+    max-width: 600px;
+    margin: 2.5vh auto;
+}
+.level-one-li {
+    /* border: 2px solid #00800080; */
+    border-top: 2px solid;
+    border-right: 2px solid;
+    margin: 5vh 0 7.5vh;
+}
+
+h1, h2, h3, h4 {
+    display: inline;
+    border: 2px solid;
+    padding: .125em .5em;
+    z-index: 10;
+    position: relative;
+    /* top: -.5em; */
+    /* background: #ffffff; */
+}
+
+h1 {
+    border: 2px solid;
+    font-size: 1.5em;
+    top: -.65em;
+    padding: .125em 1em;
+
+}
+
+h2 {
+    border: 2px solid;
+    font-size: 1.25em;
+    top: -.65em;
+    padding: .125em .75em;
+
+}
+
+h3 {
+    border: 2px solid;
+    font-size: 1em;
+}
+
+h4 {
+    font-weight: lighter;
+}
+
+.level-two-title {
+    text-align: right;
+    position: relative;
+    top: .75em;
+}
+
+.level-two-ul {
+    /* background: #ffa000; */
+    text-align: right;
+    position: relative;
+    top: .75em;
+}
+
+.level-two-item {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.item-li {
+    margin: 2.5vh 0;
+}
+
+.line {
+    height: 2px;
+    width: 50px;
+    background: #ffffff;
+    top: .5em;
+}
+.line::before {
+    white-space: nowrap;
+}
+
+about-level {
+    
+}
+
+.level-two-p {
+    /* text-align: right;
+    position: relative;
+    top: 2.1em; */
+    border-bottom: 2px solid;
+    margin-left: 25%;
+}
+
+p {
+    border: 2px solid;
+    border-bottom: none;
+    font-weight: 200;
+    padding: .25em .25em;
+    width: 90%;
+}
+
+.about-item {
+    justify-content: start;
+}
