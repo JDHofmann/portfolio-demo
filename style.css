@@ -59,6 +59,14 @@ h2 {
     font-size: calc(20px + (26 - 20) * ((100vw - 320px) / (800 - 320)));
 }
 
+h2::after {
+    content: "";
+    border-top: 2px solid;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
 h3, h4 {
     font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (800 - 320)));
     font-weight: 300;
