@@ -41,7 +41,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, li, a, span {
     margin-bottom: 5vh;
 }
 
-h1, h2, h3, .subtitle, .about-sub-item {
+h1, h2, h3, .subtitle, .about-sub-item, .description-sub-item {
     border: 1.5px solid;
     padding: .3vmin 5vw;
     border-radius: 7.5px;
@@ -89,12 +89,13 @@ a {
 a:hover h3, a:focus h3 {
     transition: .3s;
     margin: 0.75vmin;
+    color: #ffc040;
+    text-decoration: underline;
 }
 
 a:hover, a:focus {
     border: 1.5px solid #ffffff;
     border-radius: 10px;
-    text-decoration: underline;
     transition: .3s;
 }
 
@@ -143,7 +144,13 @@ a:hover, a:focus {
     grid-row: 6/8;
 }
 
-.subtitle, .sub-item, .about-sub-item {
+.box-item-1-2-end {
+    border-top: 1px solid;
+    /* border-bottom: 1px solid; */
+    grid-row: 4/6;
+}
+
+.subtitle, .sub-item, .about-sub-item, .description-sub-item {
     grid-column: 1/3;
     grid-row: 3/5;
     min-width: 50%;
@@ -156,7 +163,13 @@ a:hover, a:focus {
     font-size: 18lc(14px + (18 - 14) * ((100vw - 320px) / (1200 - 320)));
     font-weight: 200;
     padding: .4em;
+}
 
+.description-sub-item {
+    grid-row: 6/8;
+    font-size: 18lc(14px + (18 - 14) * ((100vw - 320px) / (1200 - 320)));
+    font-weight: 200;
+    padding: .4em;
 }
 
 .sub-item-2 {
