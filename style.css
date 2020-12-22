@@ -15,7 +15,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, li, a, span {
 
 .content {
     width: 90vw;
-    max-width: 500px;
+    max-width: 550px;
     margin: 5vh auto;
 }
 
@@ -52,7 +52,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: calc(24px + (33 - 24) * ((100vw - 320px) / (800 - 320)));
+    font-size: calc(24px + (32 - 24) * ((100vw - 320px) / (800 - 320)));
 }
 
 h2 {
