@@ -68,7 +68,13 @@ h4 {
     font-weight: 200;
 }
 
-a:hover h3{
+.pj:hover h3 {
+    color: #ffc040;
+    text-decoration: underline;
+    transition: .5s;
+}
+
+a:hover h3 {
     color: #ff8080;
     text-decoration: underline;
     transition: .5s;
