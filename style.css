@@ -73,13 +73,6 @@ h2 {
     font-size: calc(20px + (26 - 20) * ((100vw - 320px) / (800 - 320)));
 }
 
-h2::after {
-    content: "";
-    border-top: 2px solid;
-    height: 100%;
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
 
 h3, .subtitle {
     font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (800 - 320)));
@@ -97,14 +90,9 @@ a {
 .pj:hover h3, .pj:focus h3 {
     transition: .3s;
     color: #ffc040;
-    /* border: 3px solid; */
-    /* box-shadow:  0 0 .5em .5em #ffc04080; */
     outline: .35em dotted #ffffff;
     outline-offset: 0.5vw;
     text-decoration: underline;
-    /* z-index: 1; */
-    /* color: #202020;
-    background-color: #ffc040; */
 }
 
 a:hover h3, a:focus h3 {
