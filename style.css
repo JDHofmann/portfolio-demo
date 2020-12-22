@@ -68,13 +68,13 @@ h4 {
     font-weight: 200;
 }
 
-.pj:hover h3 {
+.pj:hover h3, .pj:focus h3 {
     color: #ffc040;
     text-decoration: underline;
     transition: .5s;
 }
 
-a:hover h3 {
+a:hover h3, a:hover h3 {
     color: #ff8080;
     text-decoration: underline;
     transition: .5s;
@@ -137,6 +137,8 @@ h4, .sub-item, .about-sub-item {
     width: 75%;
     font-size: 18lc(14px + (18 - 14) * ((100vw - 320px) / (800 - 320)));
     font-weight: 200;
+    padding: .4em;
+
 }
 
 .email {
