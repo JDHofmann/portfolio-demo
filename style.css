@@ -48,7 +48,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, li, a, span {
     margin-bottom: 5vh;
 }
 
-h1, h2, h3, h4, .about-sub-item {
+h1, h2, h3, .subtitle, .about-sub-item {
     border: 1.5px solid;
     padding: .2em;
     border-radius: 7.5px;
@@ -61,6 +61,9 @@ h1, h2 {
 
 h1 {
     font-size: calc(24px + (32 - 24) * ((100vw - 320px) / (800 - 320)));
+    outline: 1.5vw dotted #ffffff;
+    outline-offset: 0.75vw;
+    z-index: 5;
 }
 
 h2 {
@@ -75,12 +78,12 @@ h2::after {
     grid-row: 2/3;
 }
 
-h3, h4 {
+h3, .subtitle {
     font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (800 - 320)));
     font-weight: 300;
 }
 
-h4 {
+.subtitle {
     font-weight: 200;
 }
 
@@ -92,9 +95,9 @@ a {
     transition: .3s;
     color: #ffc040;
     /* border: 3px solid; */
-    /* box-shadow: inset 0 0 0 .1em #ffc040; */
+    /* box-shadow:  0 0 .5em .5em #ffc04080; */
     outline: .35em dotted #ffffff;
-    outline-offset: 0.25rem;
+    outline-offset: 0.5vw;
     text-decoration: underline;
     /* z-index: 1; */
     /* color: #202020;
@@ -104,7 +107,7 @@ a {
 a:hover h3, a:focus h3 {
     color: #ff8080;
     outline: .35em dotted #ffffff;
-    outline-offset: 0.25rem;
+    outline-offset: 0.5vw;
     text-decoration: underline;
     transition: .3s;
 }
@@ -154,7 +157,7 @@ a:hover h3, a:focus h3 {
     grid-row: 6/8;
 }
 
-h4, .sub-item, .about-sub-item {
+.subtitle, .sub-item, .about-sub-item {
     grid-column: 1/3;
     grid-row: 3/5;
     width: 50%;
