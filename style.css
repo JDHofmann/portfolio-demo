@@ -63,6 +63,7 @@ h1, h2 {
 h1 {
     font-size: calc(24px + (32 - 24) * ((100vw - 320px) / (800 - 320)));
     outline: 2vmin dotted #ffffff;
+
     outline-offset: 0.75vmin;
     z-index: 5;
     padding: .35vmin 2.5vw;
@@ -89,15 +90,19 @@ a {
 
 .pj:hover h3, .pj:focus h3 {
     transition: .3s;
-    color: #ffc040;
+    /* color: #ff8040;
+    color: #ffc040; */
     outline: .35em dotted #ffffff;
+    outline-style: dotted;
     outline-offset: 0.5vw;
     text-decoration: underline;
 }
 
 a:hover h3, a:focus h3 {
-    color: #ff8080;
+    /* color: #ff8080; */
     outline: .35em dotted #ffffff;
+    outline-style: dotted;
+
     outline-offset: 0.5vw;
     text-decoration: underline;
     transition: .3s;
