@@ -35,10 +35,14 @@ body {
 }
 
 .li-project-grid {
-    grid-template-rows: repeat(9, minmax(35px, 5vh));
+    grid-template-rows: repeat(8, minmax(35px, 5vh));
     margin-bottom: 2.5vh;
 }
 
+.three-grid-flex {
+    grid-template-rows: repeat(3, minmax(35px, 5vh)) minmax(35px, auto) repeat(2, minmax(35px, 5vh));
+    margin-bottom: 2.5vh;
+}
 
 h1, h2, h3, .subtitle, .description-sub-item, .tech-sub-item {
     border: 2px solid;
@@ -147,8 +151,9 @@ a:hover, a:focus {
 .box-item-1-2-end {
     border-top: 1px solid;
     /* border-bottom: 1px solid; */
-    grid-row: 4/6;
+    grid-row: 4/7;
 }
+
 
 .subtitle, .sub-item, .description-sub-item, .tech-sub-item {
     grid-column: 1/3;
@@ -157,6 +162,10 @@ a:hover, a:focus {
     justify-self: end;
     text-align: center;
 }
+
+/* .description-sub-item {
+
+} */
 
 /* .about-sub-item {
     grid-row: 3/7;
